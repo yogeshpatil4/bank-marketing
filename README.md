@@ -50,10 +50,7 @@ The dataset contains **45,000** customer records collected during a direct marke
 | previous                  | Number of contacts before this campaign                                     |
 | poutcome                  | Outcome of the previous marketing campaign (renamed to `outcome`)           |
 | y                         | Target variable (renamed to `term deposit subscribed`)                      |
-| age group (new)           | Age categorized into bins                                                   |
-| balance range (new)       | Balance categorized into ranges                                             |
-| duration group (new)      | Duration categorized into groups                                            |
-| sr. no (new)              | Serial number added for easy reference                                      |
+
 
 ---
 
@@ -69,4 +66,53 @@ The dataset was preprocessed and enhanced with additional features for more insi
 - ✅ Renamed columns for clarity:
   - `poutcome` ➝ `outcome`
   - `y` ➝ `term deposit subscribed`
-- ✅ Ensured consistency in data types, handled missing values, and prepared the data for
+- ✅ Ensured consistency in data types, handled missing values, and prepared the data for Power BI analysis.
+
+---
+
+## 📐 DAX Measures
+
+To support KPI tracking and visual analysis, the following custom measures were created in Power BI:
+
+- **Subscription Rate:** Percentage of customers who subscribed to a term deposit  
+- **Conversion Rate:** Percentage of successful subscriptions among customers who were actually contacted
+
+These measures were used across visuals like stacked bar charts, combo charts, and KPI cards to highlight key performance indicators.
+
+---
+
+## 📈 Visual Analysis Highlights (Power BI)
+
+### 📊 Subscription Rate by Age Group
+- **Highest:** Age 70+ (45.08%)  
+- **Lowest:** Age 31–50 (9.79%)
+
+### 💼 Subscription Outcome by Job Role
+- **Best performers:** Students (29%), Retired (23%)  
+- **Lowest:** Blue-collar (7%)
+
+### 💰 Balance Range vs Conversion Rate
+- Highest conversions in **1001–2000** balance range (17%)  
+- Majority of customers have balance under **1000**
+
+### 📞 Previous Campaign Outcome vs Subscription Rate
+- Customers with previous success: **64.77%** conversion rate  
+- "Unknown" outcomes: only **9.16%**
+
+### ⏱️ Call Duration vs Conversion
+- Longer calls result in significantly higher conversion rates
+
+---
+
+## 💡 Key Insights
+
+- Focus future campaigns on **retired individuals**, **students**, and those aged **70 and above**
+- Clients with **successful prior engagements** are much more likely to subscribe
+- Conversion improves significantly with **longer conversations**
+- Moderate **account balance** correlates with higher subscription likelihood
+
+---
+
+## ✅ Conclusion
+
+This project provides a comprehensive understanding of which customer segments are most likely to respond positively to term deposit campaigns. The use of Power BI helped uncover patterns and trends through clear, interactive visualizations that can guide strategic marketing decisions in future campaigns.
