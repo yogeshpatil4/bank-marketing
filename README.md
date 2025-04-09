@@ -9,9 +9,10 @@ This is an **unguided data analytics project** aimed at understanding the effect
 1. [Dataset Overview](#dataset-overview)  
 2. [Data Description](#data-description)  
 3. [Data Preparation & Cleaning](#data-preparation--cleaning)  
-4. [Visual Analysis Highlights](#visual-analysis-highlights)  
-5. [Key Insights](#key-insights)  
-6. [Conclusion](#conclusion)
+4. [DAX Measures](#dax-measures)  
+5. [Visual Analysis Highlights](#visual-analysis-highlights)  
+6. [Key Insights](#key-insights)  
+7. [Conclusion](#conclusion)
 
 ---
 
@@ -49,10 +50,6 @@ The dataset contains **45,000** customer records collected during a direct marke
 | previous                  | Number of contacts before this campaign                                     |
 | poutcome                  | Outcome of the previous marketing campaign (renamed to `outcome`)           |
 | y                         | Target variable (renamed to `term deposit subscribed`)                      |
-| age group (new)           | Age categorized into bins                                                   |
-| balance range (new)       | Balance categorized into ranges                                             |
-| duration group (new)      | Duration categorized into groups                                            |
-| sr. no (new)              | Serial number added for easy reference                                      |
 
 ---
 
@@ -69,6 +66,17 @@ The dataset was preprocessed and enhanced with additional features for more insi
   - `poutcome` ➝ `outcome`
   - `y` ➝ `term deposit subscribed`
 - ✅ Ensured consistency in data types, handled missing values, and prepared the data for Power BI analysis.
+
+---
+
+## 📐 DAX Measures
+
+To support KPI tracking and visual analysis, the following custom measures were created in Power BI:
+
+- **Subscription Rate:** Percentage of customers who subscribed to a term deposit  
+- **Conversion Rate:** Percentage of successful subscriptions among customers who were actually contacted
+
+These measures were used across visuals like stacked bar charts, combo charts, and KPI cards to highlight key performance indicators.
 
 ---
 
@@ -107,4 +115,3 @@ The dataset was preprocessed and enhanced with additional features for more insi
 ## ✅ Conclusion
 
 This project provides a comprehensive understanding of which customer segments are most likely to respond positively to term deposit campaigns. The use of Power BI helped uncover patterns and trends through clear, interactive visualizations that can guide strategic marketing decisions in future campaigns.
-
