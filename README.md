@@ -6,7 +6,7 @@ This is an **unguided data analytics project** aimed at understanding the effect
 
 ## 📚 Contents
 
-1. [Dataset Overview](#dataset-overview)  
+1. [📊 Dataset Overview](#dataset-overview)  
 2. [Data Description](#data-description)  
 3. [Data Preparation & Cleaning](#data-preparation--cleaning)  
 4. [DAX Measures](#dax-measures)  
