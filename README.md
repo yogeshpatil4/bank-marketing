@@ -4,7 +4,7 @@ This is an **unguided data analytics project** aimed at understanding the effect
 
 ---
 
-## 📚 Table of Contents
+## 📚 Contents
 
 - [Dataset Overview](#-dataset-overview)
 - [Data Description](#-data-description)
